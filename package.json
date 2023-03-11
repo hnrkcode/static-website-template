@@ -1,5 +1,5 @@
 {
-  "name": "static-website",
+  "name": "static-website-template",
   "version": "1.0.0",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
