@@ -4,10 +4,10 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:eleventy": "NODE_ENV=development eleventy --serve --quiet",
-    "dev:parcel": "parcel watch src/_assets/css/main.css src/_assets/js/index.js --dist-dir _site/assets",
+    "dev:parcel": "parcel watch src/_assets/css/main.css src/_assets/js/index.js --dist-dir _site/",
     "build": "npm-run-all -s prod:*",
     "prod:eleventy": "NODE_ENV=production eleventy --pathprefix '$npm_package_name'",
-    "prod:parcel": "parcel build src/_assets/css/main.css src/_assets/js/index.js --dist-dir _site/assets --no-source-maps"
+    "prod:parcel": "parcel build src/_assets/css/main.css src/_assets/js/index.js --dist-dir _site/ --no-source-maps"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
