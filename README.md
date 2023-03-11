@@ -9,3 +9,11 @@ This is a template project for deploying a static site to Github Pages. It is co
 3. Create a new branch called `gh-pages`.
 4. Go to your repos settings -> actions -> general and activate `read and write permissions` for workflow permissions so the action can write the static files to the gh-pages branch.
 5. Go to settings -> pages and make sure it `deploys from a branch` and that the branch is set to `gh-pages` in the `/root` directory.
+
+## Configure
+
+If you want to deploy the project to `yourusername.github.io` rather than `yourusername.github.io/your-project-name` you will have to remove the `--pathprefix $npm_package_name` from the `prod:eleventy` command in `package.json`.
+
+## Demo
+
+https://hnrkcode.github.io/static-website-template/
